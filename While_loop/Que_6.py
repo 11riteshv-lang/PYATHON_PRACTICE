@@ -1,14 +1,17 @@
 # This program takes an integer input from the user and reverses the digits of that number.
-# 1234     4321
 
 n = int(input("Enter a number: "))
-r = 0
 
+y = n
+
+r = 0
 while n != 0:
     r = r + (n % 10)
     r = r * 10
     n = n // 10
-    
+
 r = r // 10
-    
-print(r)
+
+x = r + y 
+
+print("The sum of the original number and its reverse is:", x)
